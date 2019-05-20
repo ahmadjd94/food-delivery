@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 from .views import HomeView
-from .views import UserSignUp,UserSignIn
+from .views import UserSignUp, UserSignIn, UserLogout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(), name="home"),
     path('signup', UserSignUp.as_view(), name="signup"),
     path('signin', UserSignIn.as_view(), name="signin"),
+    path('logout', UserLogout.as_view(), name="logout"),
 ]

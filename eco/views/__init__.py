@@ -1,2 +1,2 @@
 from .home import HomeView
-from .user import UserSignUp, UserSignIn
+from .user import UserSignUp, UserSignIn, UserLogout
